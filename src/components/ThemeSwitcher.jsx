@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { WiDaySunny } from "react-icons/wi";
 import { GiNightSky } from "react-icons/gi";
-import { QrContext } from '../contexts/Qrcontext';
+import { QrContext } from '../contexts/QrContext';
 
 
 const ThemeSwitcher = () => {
