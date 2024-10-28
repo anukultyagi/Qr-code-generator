@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { QrContext } from "../contexts/Qrcontext";
+import { QrContext } from "../contexts/QrContext";
 import QRCode from "react-qr-code";
 import html2canvas from 'html2canvas';
 import downloadjs from 'downloadjs';
