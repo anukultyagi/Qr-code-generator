@@ -1,55 +1,16 @@
-# QR Code Generator
+# React + Vite
 
-A **dynamic QR Code generator** built with React, allowing users to create customizable QR codes in both **PNG and SVG formats**. Users can adjust colors, input various text or URL values, and download the QR code directly.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **Real-time QR Code Generation**: Instantly updates QR code based on input text or URL.
-- **Customizable Colors**: Allows color selection for personalized QR codes.
-- **Downloadable Formats**: Supports downloads in **PNG** and **SVG**.
-- **Responsive Design**: Optimized for both desktop and mobile use.
+## React Compiler
 
----
+The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Upcoming Features
+## Expanding the ESLint configuration
 
-Future updates will include enhancements for a more powerful and versatile QR code generation experience:
-
-- **Dynamic Content Options**: Allow users to create QR codes that can encode large blocks of text or different types of information.
-- **Logo at Center**: Option to upload and place a logo or image at the center of the QR code for branding.
-- **Text Editor**: Integrate a text editor, making it easier to create QR codes that contain formatted text like restaurant menus or event details.
-- **Size Adjustment**: Flexible size options for downloading QR codes in different resolutions.
-- **Additional QR Code Formats**: Support for various content types like contact cards, event details, Wi-Fi information, and more.
-
----
-
-## Tech Stack
-
-- **Frontend**: React, Tailwind CSS
-- **Libraries**: `react-qr-code` for QR code generation, `html2canvas` for PNG export, `downloadjs` for direct downloads
-- **Deployment**: (Optional) [Deployment platform, e.g., Netlify or Vercel]
-
----
-
-## Installation
-
-Follow these steps to set up the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/qr-code-generator.git
-   cd qr-code-generator
-   ```
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-4. Open the project in your browser at http://localhost:3000.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

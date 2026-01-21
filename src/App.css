@@ -1,0 +1,8 @@
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, caramellatte;
+  root: "#my-app";
+  include: button, input, select;
+  exclude: ;
+  prefix: ;
+  logs: true;
+}
